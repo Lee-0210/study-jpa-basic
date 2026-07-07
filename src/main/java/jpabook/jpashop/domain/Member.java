@@ -25,10 +25,6 @@ public class Member extends BaseEntity {
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
 
-    @OneToOne
-    @JoinColumn(name = "locker_id")
-    private Locker locker;
-
     private String name;
     private String city;
     private String street;
